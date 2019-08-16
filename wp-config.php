@@ -17,30 +17,23 @@
  *
  * @package WordPress
  */
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_HOME','http://08091971.de/studio0815/projekt-3%20WordPress%20SQLite');
-define('WP_SITEURL','http://08091971.de/studio0815/projekt-3%20WordPress%20SQLite');
+define('WP_HOME','http://example.com');
+define('WP_SITEURL','http://example.com');
 define('DB_FILE', 'wordpress.db');
 define('DB_DIR', dirname(__FILE__).'/');
-define('DB_NAME', 'wordpress');
-
+define('DB_NAME', 'database_name_here');
 /** MySQL database username */
 define('DB_USER', 'username_here');
-
 /** MySQL database password */
 define('DB_PASSWORD', 'password_here');
-
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
-
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
-
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -58,9 +51,7 @@ define('AUTH_SALT',        ' au!GNh(L8mygT]#.s=#tXE$OGKK_B:tMDc@@83I%2jrOZIprPU]
 define('SECURE_AUTH_SALT', '@g{oN2lItLTS@-.fy)-l^ W47~e/0[g|F!o$5*U1sr !5c^Ygsu!-;jyU)< u3K}');
 define('LOGGED_IN_SALT',   'gKrGMp23s0b-fy]Ri-[;NB;2a5h7:qGNU`W0P*,!7n2j_Df|nPd[CYUr!:Q-eX}.');
 define('NONCE_SALT',       '3Ol,glpiG_S|D/s>]GkxejXCGD]+{=7x@;4Nx~cW<MW]w1CK:^SF P|pWUWr[<QV');
-
 /**#@-*/
-
 /**
  * WordPress Database Table prefix.
  *
@@ -68,7 +59,6 @@ define('NONCE_SALT',       '3Ol,glpiG_S|D/s>]GkxejXCGD]+{=7x@;4Nx~cW<MW]w1CK:^SF
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
-
 /**
  * For developers: WordPress debugging mode.
  *
@@ -82,12 +72,9 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
-
 /* That's all, stop editing! Happy blogging. */
-
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
